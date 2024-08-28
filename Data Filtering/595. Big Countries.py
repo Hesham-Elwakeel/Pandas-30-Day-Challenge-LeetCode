@@ -45,3 +45,10 @@ Output:
 | Afghanistan | 25500100   | 652230  |
 | Algeria     | 37100000   | 2381741 |
 +-------------+------------+---------+
+
+
+import pandas as pd
+
+def big_countries(world: pd.DataFrame):
+    big_countries_df = world[(world ['area'] >= 3000000) | (world ['population'] >= 25000000)]
+    return big_countries_df[['name', 'population', 'area']]
