@@ -36,3 +36,9 @@ Output:
 | 3           |
 +-------------+
 Explanation: Only products 1 and 3 are both low fat and recyclable.
+
+import pandas as pd
+
+def find_products(products: pd.DataFrame):
+    result = products[(products['low_fats'] == 'Y') & (products['recyclable'] == 'Y' )]
+    return result[['product_id']]
