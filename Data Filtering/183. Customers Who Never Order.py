@@ -10,7 +10,6 @@ Each row of this table indicates the ID and name of a customer.
  
 
 Table: Orders
-
 +-------------+------+
 | Column Name | Type |
 +-------------+------+
