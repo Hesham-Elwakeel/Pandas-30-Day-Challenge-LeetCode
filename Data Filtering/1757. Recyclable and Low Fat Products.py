@@ -1,4 +1,4 @@
-Table: Products
+**Table: Products**
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
