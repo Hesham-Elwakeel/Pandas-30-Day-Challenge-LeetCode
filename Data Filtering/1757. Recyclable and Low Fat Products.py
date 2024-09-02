@@ -43,4 +43,18 @@ def find_products(products: pd.DataFrame):
     result = products[(products['low_fats'] == 'Y') & (products['recyclable'] == 'Y' )]
     return result[['product_id']]
 
-1. **Hesham**
+1. **Data Preparation**
+
+2. **Exploring the Contents of variables**
+   - **Countries**
+   - **Customers and products**
+     - Cancelling orders
+     - StockCode
+     - Basket price
+
+3. **Insight on product categories**
+   - **Product description**
+   - **Defining product categories**
+     - Data encoding
+     - Clusters of products
+     - Characterizing the content of clusters
