@@ -31,3 +31,10 @@ Output:
 Explanation: 
 Tweet 1 has length = 14. It is a valid tweet.
 Tweet 2 has length = 32. It is an invalid tweet.
+
+import pandas as pd
+
+def invalid_tweets(tweets: pd.DataFrame) -> pd.DataFrame:
+    df = tweets[tweets['content'].str.len() > 15]
+    dfr = df[['tweet_id']]
+    return dfr
